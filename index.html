@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap"
-   rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Ping coming soon page</title>
 
   <link rel="stylesheet" href="./css/ping.css">
@@ -19,33 +21,33 @@
 <body>
 
   <nav>
-    <img src="./images/logo.svg" alt="logo">
+    <img src="../images/logo.svg" alt="logo">
   </nav>
 
   <div>
-     <h1>
-      We are launching <span>soon!</span> 
-     </h1>
+    <h1>
+      We are launching <span>soon!</span>
+    </h1>
 
-     <p>Subscribe and get notified</p>
+    <p>Subscribe and get notified</p>
 
-     <div id="email">
+    <form >
 
       <div>
-        <input type="email"  placeholder="Your email address..." required>
-        <p id="error"></p>
+        <input type="email" id="email-address" placeholder="Your email address..." >
+        <small id="error">error</small>
       </div>
 
       <div id="click">
-        <button onclick="errorMessage()"> Notify Me</button>
+        <button type="submit">Notify Me</button>
       </div>
 
-     </div>
-  
+    </form>
+
   </div>
 
   <div id="dashboard">
-    <img src="./images/illustration-dashboard.png" alt="illustration-dashboard">
+    <img src="/images/illustration-dashboard.png" alt="illustration-dashboard">
   </div>
 
   <div>
@@ -62,11 +64,12 @@
 
   <footer>
     <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="https://github.com/Hassanibrahim0617">IBRAHIM HASSAN</a>.
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">IBRAHIM HASSAN</a>.
     </p>
   </footer>
 
   <script src="./js/ping.js"></script>
 </body>
+
 </html>

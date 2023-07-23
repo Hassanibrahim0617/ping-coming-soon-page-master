@@ -45,7 +45,7 @@ p{
     font-weight: 300;
 }
 
-#email{
+form{
    display: flex;
    margin: 20px 10px 0px 25%;
 }
@@ -68,8 +68,14 @@ input{
     margin: 0 0 0 110px;
     font-size: 10px;
     font-weight: 300;
+    display: none;
 }
-
+form .error input{
+    border: 1px solid var(--lightRed);
+}
+form .success input{
+    border: 1px solid #2ab90a97;
+}
 #click{
     margin: 20px 0 10px 10%;
 }
@@ -146,7 +152,7 @@ button:hover{
         margin:0 0 0 26%;
     }
 
-    #email{
+   form{
         flex-direction: column;
         margin: 30px 0 0 35px;
 
